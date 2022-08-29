@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right,#ccff78,#23ee5f,#cfcfce);
+    position: relative;
+}
+
+nav{
+display: flex;
+width: 80%;
+margin: 20px auto;
+align-items: center;
+z-index: 1;
+}
+.nav-logo{
+    flex-basis: 20%;
+     z-index: 1;
+}
+.nav-logo img{
+    width: 80px;
+}
+
+.nave-link{
+    flex: 1;
+    text-align: right;
+}
+.nave-link ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nave-link ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    margin: 0 10px;
+}
+.information{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.circle{
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0);
+    /* background-color: azure; */
+}
+
+.feture-image{
+    margin: 20px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+
+}
+.feture-image img{
+    width: 60px;
+    color: azure;
+    
+}
+.one{
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+
+.two{
+    position: absolute;
+    bottom: 300px;
+    right: 50px;
+    transform: rotate(360deg);
+}
+.three{
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    transform: rotate(-90deg);
+}
+
+.four{
+    position: absolute;
+    bottom: 50px;
+    left: 300px;
+    transform: rotate(-270deg);
+}
+.center{
+    width: 200px;
+    height: 300px;
+position: absolute;
+top: 30%;
+left: 38%;
+transform: translateY(-50%,-50%);
+z-index: 2;
+}
+.whit{
+    color: white;
+}
+
+.controls{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    text-align: center;
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 350px solid white;
+    border-right: 350px solid red;
+    border-bottom: 350px solid white;
+    border-left: 350px solid white;
+
+}
